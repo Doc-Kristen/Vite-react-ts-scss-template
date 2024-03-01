@@ -16,7 +16,6 @@ html {
     font-weight: 400;
     font-size: $fz-default;
     line-height: 24px;
-    color: $color-text;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -26,8 +25,6 @@ html {
 body {
     width: 100%;
     height: 100%;
-
-    background-color: $color-bg;
 }
 
 a {
