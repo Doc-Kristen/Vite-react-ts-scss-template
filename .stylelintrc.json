@@ -1,13 +1,11 @@
 {
-  "extends": ["stylelint-config-standard-scss"],
+  "extends": ["stylelint-config-standard", "stylelint-config-standard-scss"],
+  "ignoreFiles": ["node_modules/**/*.scss", "**/styles/**/*.scss"],
   "rules": {
-    "selector-class-pattern": [
-      "^[a-z][a-zA-Z0-9]+$",
-      {
-        "message": "Class name should be camelCase",
-        "severity": "error"
-      }
-    ]
+    "selector-class-pattern": null,
+    "selector-pseudo-class-no-unknown": null,
+    "property-no-unknown": [true, { "ignoreProperties": ["composes"] }],
+    "declaration-no-important": true
   },
   "defaultSeverity": "error"
 }
