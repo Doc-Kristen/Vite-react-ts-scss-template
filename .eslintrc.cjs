@@ -32,4 +32,9 @@ module.exports = {
     'no-var': 'error',
     'prefer-const': 'warn',
   },
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
 };
